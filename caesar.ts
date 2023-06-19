@@ -44,13 +44,4 @@ class Caesar {
   }
 }
 
-function bruteForceDecrypt(cipherText: string) {
-  for(let i=0; i<26; i++) {
-    let caesar = new Caesar(i);
-    console.log(caesar.decrypt(cipherText));
-  }
-}
-
-let caesar = new Caesar(20);
-let cipherText = 'Byffi Qilfx';
-bruteForceDecrypt(cipherText);
+export { Caesar }
